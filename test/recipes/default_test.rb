@@ -23,5 +23,11 @@ describe port(389) do
 end
 
 describe file('/etc/httpd/conf.d/phpldapadmin.conf') do
-  its(:content) { should match /Require all granted/ }  
+  its(:content) { should match /Require all granted/ }
+  skip 'phpLDAPadmin is accessible'
+end
+
+describe file('/etc/httpd/conf.d/r_proxy.conf') do
+  its(:content) { should match /ProxyPass/ }
+  skip 'Reverse Proxy is setup'  
 end
