@@ -19,7 +19,8 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[machine::default]
+#      - recipe[machine::default]
+      - recipe[machine::reverseproxy]
     verifier:
       inspec_tests:
         - test/recipes
