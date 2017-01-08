@@ -1,4 +1,4 @@
-# Delivery Prototype for Local Phases Execution
+                  # Delivery Prototype for Local Phases Execution
 #
 # The purpose of this file is to prototype a new way to execute
 # phases locally on your workstation. The delivery-cli will read
